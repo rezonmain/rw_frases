@@ -46,7 +46,8 @@ h1 {
     transform: scale(1, 1.3);
   }
   100% {
-    transform: translateY(-100vh);
+    transform: translateY(-150vh);
+    display: none;
   }
 }
 
