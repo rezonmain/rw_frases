@@ -51,7 +51,7 @@ h1 {
 }
 
 .img-container {
-  background-image: url("/img/b0.png");
+  background-image: url("../img/b0.png");
   background-repeat: no-repeat;
   background-size: contain;
   height: calc(699px / 2);
