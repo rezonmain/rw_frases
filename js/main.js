@@ -17,8 +17,6 @@ function decodeString(str) {
 let burgerElement = document.getElementById("burger");
 burgerElement.onclick = showFrase;
 
-let frasesSpan = document.createElement("span");
-
 function hasEnded(event) {
   if (event.type === "animationend") {
     return true;
@@ -32,7 +30,11 @@ function showFrase() {
   burgerElement.addEventListener(
     "animationend",
     () => {
+      let frasesSpan = document.createElement("span");
       frasesSpan.innerText = decodeString(frases[getRandomInt(frases.length)]);
+      let burgerDiv = document.getElementById("burger");
+      document.getElementById("big-container").removeChild(burgerDiv);
+      frasesSpan.classList.add("frase");
       document.getElementById("frase_container").appendChild(frasesSpan);
     },
     false

@@ -11,9 +11,9 @@ h1 {
 
 .container-frase {
   width: auto;
-  height: 50rem;
+  height: 40rem;
   margin-bottom: 2rem;
-  /* box-shadow: var(--shadows); */
+  box-shadow: var(--shadows);
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -74,4 +74,13 @@ h1 {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
+}
+
+.frase {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  display: flex;
+  align-self: center;
+  justify-self: center;
 }
