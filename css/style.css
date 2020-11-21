@@ -1,5 +1,71 @@
 :root {
   --shadows: 1px 1px 3px 0px rgba(0, 0, 0, 0.14);
+  --background-orange: #ee6903;
+  --background-red: #e03030;
+}
+/*Default settings for SVG's*/
+.svg-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: var(--background-red);
+}
+
+.svg-icon circle {
+  stroke: var(--background-red);
+  stroke-width: 1;
+}
+
+.svg-icon-arrow {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.svg-icon-arrow path,
+.svg-icon-arrow polygon,
+.svg-icon-arrow rect {
+  fill: var(--background-orange);
+}
+
+.svg-icon-arrow circle {
+  stroke: var(--background-orange);
+  stroke-width: 1;
+}
+
+.svg-icon-drop {
+  width: 2rem;
+  height: 2rem;
+}
+
+.svg-icon-drop path,
+.svg-icon-drop polygon,
+.svg-icon-drop rect {
+  fill: #fff;
+}
+
+.svg-icon-drop circle {
+  stroke: #fff;
+  stroke-width: 1;
+}
+
+.svg-icon-link {
+  width: 4rem;
+  height: 4rem;
+}
+
+.svg-icon-link path,
+.svg-icon-link polygon,
+.svg-icon-link rect {
+  fill: #000000;
+}
+
+.svg-icon-link circle {
+  stroke: #000000;
+  stroke-width: 1;
 }
 
 h1 {
@@ -11,8 +77,7 @@ h1 {
 
 .container-frase {
   width: auto;
-  height: 80vh;
-  margin-bottom: 2rem;
+  height: 70vh;
   /* box-shadow: var(--shadows); */
   display: flex;
   flex-flow: column nowrap;
@@ -110,4 +175,60 @@ h1 {
   font-size: 2.5rem;
   font-style: italic;
   animation: appear 1s ease-in-out 1 forwards;
+}
+
+.links-container {
+  width: auto;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  color: #000100;
+  text-decoration: none;
+  padding-left: 0.75rem;
+}
+
+.link-text {
+  padding-top: 2rem;
+  margin-left: 1rem;
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.social-links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding-right: 1rem;
+}
+
+.contacto-card {
+  background-color: #fff;
+  height: auto;
+  border-radius: var(--radius);
+  box-shadow: var(--shadows);
+  margin-bottom: 1rem;
+}
+
+.contacto-section a {
+  width: 100%;
+  color: var(--background-orange);
+}
+
+@media only screen and (max-width: 768px) {
+  .link-text {
+    display: none;
+  }
 }
