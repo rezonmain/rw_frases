@@ -23,10 +23,12 @@ function hasEnded(event) {
   } else return false;
 }
 
+let harpsxf = new Audio("../audio/harp.m4a");
 function showFrase() {
   burgerElement.style.animation = "rise 1s ease-in-out infinite";
   burgerElement.style.animationIterationCount = 1;
   burgerElement.style.animationFillMode = "forwards";
+  harpsxf.play();
   burgerElement.addEventListener(
     "animationend",
     () => {
