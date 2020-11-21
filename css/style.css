@@ -1,0 +1,74 @@
+:root {
+  --shadows: 1px 1px 3px 0px rgba(0, 0, 0, 0.14);
+}
+
+h1 {
+  padding-top: 0.7rem;
+  text-align: center;
+  font-family: "Bowlby One SC", cursive;
+  z-index: 1000;
+}
+
+.container-frase {
+  width: auto;
+  height: 50rem;
+  margin-bottom: 2rem;
+  /* box-shadow: var(--shadows); */
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  /* border-radius: 1rem; */
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-10px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(+40px);
+    transform: scale(1, 0.8);
+  }
+  50% {
+    transform: translateY(-40px);
+    transform: scale(1, 1.3);
+  }
+  100% {
+    transform: translateY(-100vh);
+  }
+}
+
+.img-container {
+  background-image: url("/img/b0.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: calc(699px / 2);
+  width: calc(695px / 2);
+  animation: float 2s ease-in-out infinite;
+  cursor: pointer;
+  z-index: 900;
+}
+
+.txt-container {
+  display: block;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.btn-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
