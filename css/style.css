@@ -13,7 +13,7 @@ h1 {
   width: auto;
   height: 80vh;
   margin-bottom: 2rem;
-  box-shadow: var(--shadows);
+  /* box-shadow: var(--shadows); */
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -51,6 +51,18 @@ h1 {
   }
 }
 
+@keyframes appear {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
 .img-container {
   background-image: url("../img/b0.png");
   background-repeat: no-repeat;
@@ -65,9 +77,12 @@ h1 {
 }
 
 .txt-container {
-  display: block;
-  font-size: medium;
-  font-weight: bold;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 
 .btn-container {
@@ -76,11 +91,23 @@ h1 {
   justify-content: center;
 }
 
-.frase {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+.frase-header {
   text-align: center;
   display: flex;
   align-self: center;
   justify-self: center;
+  font-family: "Anton", sans-serif;
+  font-size: 3rem;
+  animation: appear 1s ease-in-out 1 forwards;
+}
+
+.frase {
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  font-size: 2.5rem;
+  font-style: italic;
+  animation: appear 1s ease-in-out 1 forwards;
 }

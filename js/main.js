@@ -30,11 +30,16 @@ function showFrase() {
   burgerElement.addEventListener(
     "animationend",
     () => {
+      let fraseHeader = document.createElement("span");
+      fraseHeader.innerText = "La burger mágica ha hablado:";
+      fraseHeader.classList.add("frase-header");
       let frasesSpan = document.createElement("span");
-      frasesSpan.innerText = decodeString(frases[getRandomInt(frases.length)]);
+      frasesSpan.innerText =
+        '"' + decodeString(frases[getRandomInt(frases.length)]) + '"';
       let burgerDiv = document.getElementById("burger");
       document.getElementById("big-container").removeChild(burgerDiv);
       frasesSpan.classList.add("frase");
+      document.getElementById("frase_container").appendChild(fraseHeader);
       document.getElementById("frase_container").appendChild(frasesSpan);
     },
     false
