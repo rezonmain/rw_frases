@@ -60,6 +60,8 @@ h1 {
   animation: float 2s ease-in-out infinite;
   cursor: pointer;
   z-index: 900;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 
 .txt-container {
