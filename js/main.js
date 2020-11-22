@@ -7,8 +7,6 @@ let getRandomInt = (max) => {
 function decodeString(str) {
   let p = [];
   for (let i = 0; i < str.length; i++) {
-    // let x = str.charCodeAt(i) - 13;
-    // let y = String.fromCharCode(x);
     p.push(String.fromCharCode(str.charCodeAt(i) - 13));
   }
   return p.join("");
