@@ -40,6 +40,7 @@ function showFrase() {
 			let burgerDiv = document.getElementById('burger');
 			document.getElementById('big-container').removeChild(burgerDiv);
 			frasesSpan.classList.add('frase');
+			document.getElementById('big-container').style['justify-content'] = 'center';
 			document.getElementById('logo').classList.add('logo-container');
 			document.getElementById('frase_container').appendChild(fraseHeader);
 			document.getElementById('frase_container').appendChild(frasesSpan);

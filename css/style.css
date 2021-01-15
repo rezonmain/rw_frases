@@ -75,7 +75,7 @@ h1 {
 	z-index: 1000;
 }
 .indicator {
-	padding: 5rem;
+	padding-top: 5rem;
 	font-family: 'Anton', sans-serif;
 	text-align: center;
 	display: flex;
@@ -86,12 +86,12 @@ h1 {
 
 .container-frase {
 	width: auto;
-	height: 75vh;
+	height: 500px;
 	/* box-shadow: var(--shadows); */
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
 	/* border-radius: 1rem; */
 }
 
@@ -160,6 +160,7 @@ h1 {
 	z-index: 900;
 	-moz-user-select: none;
 	-webkit-user-select: none;
+	margin-top: 3rem;
 }
 
 .logo-container {
@@ -254,6 +255,6 @@ h1 {
 		cursor: default;
 	}
 	.container-frase {
-		height: 60vh;
+		height: 500px;
 	}
 }
